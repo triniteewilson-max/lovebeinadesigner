@@ -1,0 +1,141 @@
+
+ @font-face{   font-family: 'readingfont';
+    src: url(fonts/HelvetiHand.ttf)
+}
+@font-face {
+    font-family: 'ttthought';
+    src: url(fonts/KGHAPPYSolid.ttf);
+}
+#bg-audio{
+    display: none;
+    
+}
+.body{
+    background-image: url(images/base.JPG);
+    padding: 15px;
+    height:100vh;
+    overflow:hidden;
+    
+   
+}
+.maincontainer{
+height: 90%;
+border: solid white 10px;
+overflow: scroll;
+margin: 15px;
+margin-bottom: 15px;
+background: linear-gradient(rgb(24, 172, 236),grey);
+display: flex;
+flex-direction: column;
+
+}
+/* .backborder {
+    background-image: url(images/background_no_move.jpg);
+    height: 100%;
+    width: 100%;
+    padding: 7px;
+    box-sizing: border-box;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+} */
+/* css text */
+.mytext{
+    font-family: 'readingfont';
+    border-radius: 0.25rem;
+    display: inline-block;
+    flex-direction: column;
+    font-size: 20pt;
+    margin: 0 auto 1rem;
+    max-width: 600px;
+    padding: 1rem;
+    text-align:  center;
+}
+
+.messagesbase {
+        border-radius: 20px;
+        padding: 8px 15px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin: 15px;
+        max-width: 75%;
+        word-wrap: break-word;
+    }
+.sent {
+    translate: 360px;
+    background-color: #007AFF;
+    color: #fff;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+   
+}
+.sent1 {
+    translate: 500px;
+   font-size: small;
+    color: #000000;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+
+}
+.sent2{
+    translate: 360px;
+        background-color: #65C466;
+        color: #fff;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
+}
+.received {
+    translate: -275px;
+    background-color: #E5E5EA;
+    color: #000;
+  
+    border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+ 
+}
+
+.closex{
+    align-self: flex-end;
+    position: relative;
+    z-index: 10;
+
+}
+#xclose{
+    transition:transform 0.3s ease;
+}
+#xclose:hover {
+    transform: scale(1.2);
+}
+.clouds{
+position: relative;
+z-index:1; 
+overflow: hidden;
+width: 100%;
+height: 1000px;
+}
+.bottommainpoint{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+/* main idea */
+.mainfeeling{
+font-family: 'ttthought';
+font-size: 27pt;
+color: white;
+text-shadow: #000;
+/* translate: -300px; */
+margin-top: 500px;
+-webkit-text-stroke-width: 20%;
+}
+/* cigarette smoke effect */
+.mysmoke{
+    width: 50%;
+    height: auto;
+   translate: -30px;
+}
+
