@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home page/style.css">
+    <title>New Laptop</title>
+    <link rel="icon" type="image/png" href="images/favicon.PNG">
+</head>
+
+<body class="body">
+    <div class="maincontainer">
+        <div class="header">
+            <div class="timedate">
+                <div class="time">
+                    <a href="https://www.youtube.com/watch?v=7JvNd8C1ico">
+                    <p class="text1">What time is it anymore?</p></a>
+                </div>
+               
+               
+            </div>
+        </div>
+<div class="middlecontainer">
+        <!-- message notification -->
+     
+    <div class="macos-notification">
+        <button onclick="openMessages()" type="button" class="notif-content">
+            <div class="notif-header">
+                <div class="header-left">
+                    <img src="images/message_alert.PNG" alt="Messages" class="app-icon">
+                    <span class="app-name">MESSAGES</span>
+                </div>
+                <span class="notif-time">now</span>
+            </div>
+            <div class="notif-body">
+                <p class="sender-name">Tommy Malton</p>
+                <p class="message-preview">Hey! You need to examine them files, and then empty the trash. Click on the
+                    trashcan, when you have seen all the files. It's for 5 points. GET IT DONE BUDDY! ☕️</p>
+            </div>
+        </button>
+    </div>
+
+        <!-- Messages Popup Overlay -->
+        <div id="MessOverlay" class="messpopup" style="display: none;">
+            <div class="messpop">
+                <h2 class="text">MESSAGES</h2>
+                <strong class="sender-name">Tommy Malton</strong>
+                <p class="textyou">Hey! You need to examine them files, and then empty the trash. Click on the trashcan, when
+                    you have seen all the files. It's for 5 points. GET IT DONE BUDDY! ☕️</p>
+                <button onclick="closeMessages()">Close</button>
+            </div>
+        </div>
+<div class="trashcan">
+    
+<a href="fifth page /index.html">
+    <img src= "home page/images/trashcan.PNG" alt="Clickable Button" style="border:none; width:100px; height:50px;" width="250px" >
+</a>
+</div>
+            
+     
+
+       
+        <!--files-->
+        <button onclick="openFiles()" type="button">
+            <img class="files" src="home page/images/files.PNG"> 
+        </button>
+
+        <div id="FilesOverlay" class="filespopup" style="display: none;">
+            <div class="filespop">
+                <h2 class="text">FILES</h2>
+               <ul>
+                <a href="third page/index.html">No, like yeah?.png</a>
+                <br>
+                <a href="fourth page /index.html">These programs.pdf</a>
+                <br>
+                <a href="second page /index.html">Heirachy I still can't spell.jpeg</a>
+               </ul>
+                <button onclick="closeFiles()">Close</button>
+            </div>
+        </div>
+        </div>
+
+       
+
+        <footer class="bottom">
+            <div class="facebook"></div>
+            <div class="twitter"></div>
+            <div class="tumblr"></div>
+            <div class="instagram"></div>
+        </footer>
+    </div>
+    <script>
+        function openMessages() {
+            document.getElementById("MessOverlay").style.display = "block";
+        }
+        function closeMessages() {
+            document.getElementById("MessOverlay").style.display = "none";
+        }
+        function openFiles() {
+            document.getElementById('FilesOverlay').style.display = 'block';
+        }
+        function closeFiles() {
+            document.getElementById('FilesOverlay').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
